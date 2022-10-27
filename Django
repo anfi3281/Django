@@ -1,0 +1,27 @@
+sudo apt-get install libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev
+
+sudo ./configure
+
+sudo make
+
+sudo make install
+
+pip install --upgrade pip
+
+pip list
+
+mkdir Dev
+
+cd Dev
+
+python3.11 -m venv Env
+
+source Env/bin/activate
+
+pip install Django==4.1.2
+
+django-admin startproject mywebsite
+
+cd mywebsite
+
+python manager.py runserver
